@@ -1,0 +1,96 @@
+.category {
+    margin: 10px;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title h1 {
+    font-weight: 600;
+    color: goldenrod;
+    font-size: 34px;
+}
+
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    align-items: center;
+    gap: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-items: center;
+    
+}
+.explore-menu-list-item {
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+}
+.explore-menu-list-item p{
+    align-items: center;
+    margin-top: 10px;
+    color: rgb(39, 39, 29);
+    font-size: max(1.4vw, 16px);
+    cursor: pointer;
+}
+
+.explore-menu-list-item img {
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.explore-menu-list-item .active {
+    border: 4px solid goldenrod;
+    padding: 2px;
+    
+}
+
+
+
+@media (max-width: 768px) {
+    .category-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .title h1 {
+        font-size: 28px; /* Adjust title font size */
+    }
+
+    .explore-menu-list-item img {
+        width: 20vw; /* Adjust image width */
+    }
+
+    .explore-menu-list-item p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .category-list {
+        grid-template-columns: repeat(2, 1fr); /* 1 item per row */
+    }
+
+    .title h1 {
+        font-size: 24px; /* Further adjust title font size */
+    }
+
+    .explore-menu-list-item img {
+        width: 30vw; /* Adjust image width for even smaller screens */
+    }
+
+    .explore-menu-list-item p {
+        font-size: 12px; /* Further adjust font size for smaller screens */
+    }
+}

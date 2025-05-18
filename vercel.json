@@ -1,0 +1,16 @@
+{
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "https://chopexpressbackend-8zol.onrender.com/api/$1"
+      },
+      {
+        "handle": "filesystem"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+  }
+  
